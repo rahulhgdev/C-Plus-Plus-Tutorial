@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-struct node *reverse (struct node *head, int k)
+struct node *reverseKGroup (struct node *head, int k)
     { 
         // Complete this method
         node * cur = head;
@@ -16,5 +16,5 @@ struct node *reverse (struct node *head, int k)
         if(next!=NULL)
             head->next=reverse(next,k);
         return prev;
-    
+    }
 };
